@@ -1,0 +1,623 @@
+/* 
+=============== 
+Variables
+===============
+*/
+
+:root {
+  /* dark shades of primary color*/
+  --clr-primary-1: hsl(205, 86%, 17%);
+  --clr-primary-2: hsl(205, 77%, 27%);
+  --clr-primary-3: hsl(205, 72%, 37%);
+  --clr-primary-4: hsl(205, 63%, 48%);
+  /* primary/main color */
+  --clr-primary-5: hsl(205, 78%, 60%);
+  /* lighter shades of primary color */
+  --clr-primary-6: hsl(205, 89%, 70%);
+  --clr-primary-7: hsl(205, 90%, 76%);
+  --clr-primary-8: hsl(205, 86%, 81%);
+  --clr-primary-9: hsl(205, 90%, 88%);
+  --clr-primary-10: hsl(205, 100%, 96%);
+  /* darkest grey - used for headings */
+  --clr-grey-1: hsl(209, 61%, 16%);
+  --clr-grey-2: hsl(211, 39%, 23%);
+  --clr-grey-3: hsl(209, 34%, 30%);
+  --clr-grey-4: hsl(209, 28%, 39%);
+  /* grey used for paragraphs */
+  --clr-grey-5: hsl(210, 22%, 49%);
+  --clr-grey-6: hsl(209, 23%, 60%);
+  --clr-grey-7: hsl(211, 27%, 70%);
+  --clr-grey-8: hsl(210, 31%, 80%);
+  --clr-grey-9: hsl(212, 33%, 89%);
+  --clr-grey-10: hsl(210, 36%, 96%);
+  --clr-white: #fff;
+  --clr-red-dark: hsl(360, 67%, 44%);
+  --clr-red-light: hsl(360, 71%, 66%);
+  --clr-green-dark: hsl(125, 67%, 44%);
+  --clr-green-light: hsl(125, 71%, 66%);
+  --clr-black: #222;
+  --transition: all 0.3s linear;
+  --spacing: 0.1rem;
+  --radius: 0.25rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --max-width: 1170px;
+  --fixed-width: 800px;
+}
+/*
+=============== 
+Global Styles
+===============
+*/
+@media (max-width: 600px) {
+  p {
+    font-size: 12px;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    /* font-size: 25px; */
+  }
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  line-height: 1.5;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* section */
+.section {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: var(--max-width);
+}
+
+@media screen and (min-width: 992px) {
+  .section {
+    width: 95vw;
+  }
+}
+
+/*
+=============== 
+Navbar
+===============
+*/
+nav {
+  background: #322035;
+  box-shadow: var(--light-shadow);
+}
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.nav-toggle {
+  font-size: 1.5rem;
+  color: #fff;
+  background: transparent;
+  border-color: transparent;
+  transition: var(--transition);
+  cursor: pointer;
+  outline: none;
+}
+.logo {
+  height: 40px;
+}
+.nav-toggle:hover {
+  color: var(--clr-primary-1);
+  transform: rotate(90deg);
+}
+.logo-img {
+  width: 136px;
+  height: 40px;
+}
+.links a {
+  background: #322035;
+  color: #cfc5ef;
+  font-size: 1rem;
+  text-transform: capitalize;
+  display: block;
+  padding: 0.6rem 1rem;
+  transition: var(--transition);
+}
+.links a:hover {
+  background: #cfc5ef;
+  color: #fff;
+  padding-left: 1.5rem;
+}
+.active-link {
+  color: #fff;
+}
+.get-started {
+  width: 155px;
+  height: 42px;
+  background: #ffffff;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  font-size: 20px;
+}
+.get-started:hover {
+  border: solid 1px #fff;
+  color: #fff;
+  background: #322035;
+}
+
+.links-container {
+  height: 0;
+  overflow: hidden;
+  transition: var(--transition);
+}
+.active-link {
+  color: #fff;
+}
+
+@media screen and (min-width: 800px) {
+  .nav-center {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  .nav-header {
+    padding: 0;
+  }
+  .nav-toggle {
+    display: none;
+  }
+  .links-container {
+    height: auto !important;
+    margin-right: 70px;
+    display: flex;
+  }
+  .links {
+    display: flex;
+  }
+ 
+  .links a {
+    padding: 0;
+    margin: 0.3rem 1.5rem;
+  }
+  .links a:hover {
+    padding: 0;
+    background: transparent;
+  }
+}
+
+/*================ HOME PAGE CSS ================*/
+/* banner */
+.grid {
+  display: grid;
+  grid-template-columns: (5fr, 7fr);
+  height: auto;
+  padding-bottom: 150px;
+}
+
+@media (min-width: 800px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.turn {
+  width: 100%;
+  padding-top: 160px;
+  padding-left: 10%;
+  font-size: 300%;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 63px;
+  letter-spacing: 0em;
+  text-align: left;
+  justify-self: center;
+  color: #322305;
+}
+.hero_1 {
+  width: 75%;
+  height: 400px;
+  padding-left: 10%;
+  margin-top: 80px;
+}
+.hero_1 img {
+  margin: auto;
+}
+.hero-2 {
+  background: #eae1ec;
+  padding-left: 5%;
+}
+.hero4 {
+  padding-left: 5%;
+}
+.turn-paragraph {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: left;
+  color: #322305;
+  width: 80%;
+  padding-left: 10%;
+}
+.banner-btn {
+  width: 155px;
+  height: 42px;
+  margin-left: 10%;
+  margin-top: 10px;
+  background: #ffffff;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  font-size: 20px;
+}
+.banner-text {
+  width: 100%;
+  padding-right: 0%;
+}
+
+@media (max-width: 800px) {
+  .turn {
+    font-size: 2rem;
+    line-height: 55px;
+  }
+}
+
+/*================ COMPANY PAGE ================*/
+.contact {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.contact-hero img {
+  width: 100%;
+  height: 400px;
+}
+.about-us h1,
+.unique h1,
+.why-plat h1,
+.careers h1,
+.team h1 {
+  font-size: 55px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 83px;
+  text-align: left;
+  padding-left: 7%;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+.about-text,
+.unique-text,
+.why-plat-text,
+.careers-text {
+  padding-left: 7%;
+  padding-right: 7%;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: left;
+  color: #322305;
+}
+.team-img {
+  width: 100%;
+  height: auto;
+  padding-left: 7%;
+  padding-right: 7%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-auto-rows: 300px;
+  grid-gap: 47px;
+  padding-bottom: 100px;
+}
+.contact-avatar {
+  border-radius: 10px;
+  background: #322035;
+}
+
+/* FOOTER STYLING */
+
+.footer {
+  width: 100%;
+  height: auto;
+  background: #322035;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+.social {
+  padding-left: 25%;
+}
+.social img {
+  width: 218px;
+  height: 64px;
+  margin-top: 87px;
+}
+.social-text {
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #fff;
+  width: 217px;
+}
+.s-media {
+  font-size: 40px;
+  color: #fff;
+  padding-right: 5px;
+  padding-top: 20px;
+}
+.quick-links {
+  margin-top: 87px;
+  width: 150px;
+  margin-left: 160px;
+}
+.quick-links h2 {
+  color: #fff;
+  padding-bottom: 40px;
+}
+.q-links {
+  display: block;
+  color: #fff;
+}
+.contact-add {
+  color: #fff;
+  margin-top: 87px;
+  width: 260px;
+  margin-left: 80px;
+}
+.contact-add h2 {
+  padding-bottom: 40px;
+}
+.contact-add p {
+  font-size: 14px;
+}
+.content {
+  margin-top: 177px;
+  margin-left: 80px;
+  margin-bottom: 100px;
+}
+.terms {
+  color: white;
+  font-size: 14px;
+  display: block;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+/*============== FAQ PAGE ==============*/
+.faq-banner img {
+  width: 100%;
+  height: 400px;
+}
+.faq-banner h1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 82px;
+  color: #322035;
+  padding: 50px 7%;
+}
+
+/*
+=============== 
+Questions
+===============
+*/
+
+main {
+  min-height: 100vh;
+  /* using flex because of better browser support */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.container {
+  width: 90vw;
+  margin: 0 15% 5rem;
+  background: var(--clr-white);
+  border-radius: var(--radius);
+  padding: 2.5rem 2rem;
+  max-width: var(--fixed-width);
+  display: grid;
+  gap: 1rem 2rem;
+}
+.container h3 {
+  line-height: 1.2;
+  font-weight: 500;
+}
+.info {
+  width: 100%;
+}
+.question {
+  padding: 1rem 1.5rem;
+  border: 2px solid var(--clr-grey-special);
+  margin-bottom: 1rem;
+  border-radius: var(--radius);
+  box-shadow: var(--light-shadow);
+}
+.question h4 {
+  text-transform: none;
+  line-height: 1.5;
+}
+.question p {
+  color: var(--clr-grey-3);
+  margin-bottom: 0;
+  margin-top: 0.5rem;
+}
+.question header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.question header h4 {
+  margin-bottom: 0;
+}
+.btn {
+  background: transparent;
+  border-color: transparent;
+  width: 2rem;
+  height: 2rem;
+  background: var(--clr-grey-special);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #322035;
+  cursor: pointer;
+  margin-left: 1rem;
+  align-self: center;
+}
+
+/* TERMS AND AGREEMENT  && PRIVACY POLICY*/
+.agreement h1,
+.privacy h1 {
+  font-size: 55px;
+  color: #322035;
+  padding: 50px 6%;
+}
+.terms-section p,
+.privacy-text p {
+  font-size: 20px;
+  padding-left: 6%;
+  padding-right: 6%;
+  color: #322035;
+  font-weight: 400;
+  padding-bottom: 50px;
+}
+/* BLOG STYLING */
+.blog {
+  width: 100%;
+  height: 600px;
+  text-align: center;
+  justify-content: center;
+}
+.blog h1 {
+  font-size: 55px;
+  color: #322035;
+  margin: auto 0;
+}
+
+/*========== CONTACT US PAGE STYLING ==========*/
+.contact-us {
+  display: grid;
+  height: auto;
+}
+@media (min-width: 800px) {
+  .contact-us {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* .img-box{
+    padding: auto 10%;
+  } */
+}
+.img-box img {
+  width: 90%;
+  height: 500px;
+}
+.contact-text {
+  padding-left: 11%;
+}
+.contact-text h1 {
+  font-size: 55px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 83px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #322035;
+  padding-bottom: 30px;
+}
+
+.bold,
+.light {
+  font-style: normal;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #322035;
+  padding-bottom: 30px;
+}
+.bold {
+  font-weight: bold;
+}
+.light {
+  font-weight: 400;
+}
+
+.c-media {
+  font-size: 40px;
+  padding-right: 5px;
+  color: #322035;
+}
+.contact-text a {
+  color: #322035;
+}
+.img-box {
+  width: 80%;
+  height: 500px;
+  margin: auto;
+  margin-top: 150px;
+  margin-bottom: 50px;
+}
+
+/*============== GETSTARTED STYLING ==============*/
+
+.get-started-section {
+  display: grid;
+  padding-left: 5%;
+}
+@media (min-width: 800px) {
+  .get-started-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.getstarted-form h1 {
+  font-size: 55px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 83px;
+  text-align: left;
+  color: #322035;
+}
+.getstarted-form p {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 38px;
+  text-align: left;
+  color: #322035;
+}
+.getstarted-form h3 {
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 38px;
+  text-align: left;
+  color: #322035;
+  padding-top: 30px;
+}
