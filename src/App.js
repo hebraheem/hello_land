@@ -13,34 +13,34 @@ import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 function App() {
   return (
     <div className="App">
-      <Router>
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/company">
-            <Company />
-          </Route>
-          <Route path="/contact">
-            <Contact />
-          </Route>
-          <Route path="/faq">
-            <Faq />
-          </Route>
-          <Route path="/tems-and-condition">
-            <Terms />
-          </Route>
-          <Route path="/privacy-policy">
-            <Privacy />
-          </Route>
-          <Route path="/getstarted">
-            <GetStarted />
-          </Route>
-          <Route path="/blog">
-            <Blog />
-          </Route>
-        </Switch>
-      </Router>
+        <Router>
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="/company">
+              <Company />
+            </Route>
+            <Route path="/contact">
+              <Contact />
+            </Route>
+            <Route path="/faq">
+              <Faq />
+            </Route>
+            <Route path="/tems-and-condition">
+              <Terms />
+            </Route>
+            <Route path="/privacy-policy">
+              <Privacy />
+            </Route>
+            <Route path="/getstarted">
+              <GetStarted />
+            </Route>
+            <Route path="/blog">
+              <Blog />
+            </Route>
+          </Switch>
+        </Router>
     </div>
   );
 }

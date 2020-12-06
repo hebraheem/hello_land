@@ -34,11 +34,11 @@ const Navbar = () => {
         <div className="links-container" ref={linksContainerRef}>
           <ul className="links" ref={linksRef}>
             {links.map((link) => {
-              const { id, url, text } = link;
+              const { id, url, text,klass } = link;
               return (
-                <li><NavLink activeClassName="active-link" to={url} key={id}>
-                  {text}
-                </NavLink></li>
+                <NavLink className="nav-link" activeClassName={klass} to={url} key={id}>
+                  <li> {text}</li>
+                </NavLink>
               );
             })}
           </ul>

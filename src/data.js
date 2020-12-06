@@ -5,26 +5,31 @@ export const links = [
     id: 1,
     url: "/",
     text: "",
+    klass:"active-link"
   },
   {
     id: 2,
     url: "/company",
     text: "company",
+    klass:"active-link"
   },
   {
     id: 3,
     url: "/contact",
     text: "contact",
+    klass:"active-link"
   },
   {
     id: 4,
     url: "/faq",
     text: "FAQ",
+    klass:"active-link"
   },
   {
     id: 5,
     url: "/blog",
     text: "blog",
+    klass:"active-link"
   },
 ];
 
