@@ -114,7 +114,7 @@ nav {
 .logo-img {
   width: 136px;
   height: 40px;
-  margin-left: 28%;
+  margin-left: 35px;
 }
 .nav-link {
   color: #cfc5ef;
@@ -136,15 +136,15 @@ nav {
   color: #fff;
 }
 .get-started {
-  width: 155px;
-  height: 42px;
+  width: 120px;
+  height: 38px;
   background: #ffffff;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   border: none;
   cursor: pointer;
   outline: none;
-  font-size: 20px;
+  font-size: 16px;
 }
 .get-started:hover {
   border: solid 1px #fff;
@@ -209,7 +209,7 @@ nav {
   display: grid;
   grid-template-columns: (5fr, 7fr);
   height: auto;
-  padding-bottom: 12%;
+  padding-bottom: 4%;
 }
 
 @media (min-width: 800px) {
@@ -222,7 +222,7 @@ nav {
   width: 100%;
   padding-top: 25%;
   padding-left: 10%;
-  font-size: 300%;
+  font-size: 280%;
   font-style: normal;
   font-weight: 600;
   line-height: 63px;
@@ -231,9 +231,12 @@ nav {
   justify-self: center;
   color: #322305;
 }
+.hero4{
+  padding-top: 200px;
+}
 .hero_1 {
-  width: 75%;
-  height: 400px;
+  width: 90%;
+  height: 520px;
   padding-left: 10%;
   margin-top: 80px;
 }
@@ -248,7 +251,7 @@ nav {
   margin-bottom: 4rem;
 }
 .client-say {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #322035;
 }
 .our-word {
@@ -285,7 +288,7 @@ nav {
   padding-left: 10%;
 }
 .banner-btn {
-  width: 155px;
+  width: 120px;
   height: 42px;
   margin-left: 10%;
   margin-top: 10px;
@@ -295,13 +298,22 @@ nav {
   border: none;
   cursor: pointer;
   outline: none;
-  font-size: 20px;
+  font-size: 16px;
 }
 .banner-text {
   width: 100%;
   padding-right: 0%;
 }
-
+.aesthetic2{
+  position: absolute;
+  right: 0;
+  /* top: 140%; */
+}
+@media(max-width: 800px){
+  .aesthetic2{
+    top: 200%;
+  }
+}
 @media (max-width: 800px) {
   .turn {
     font-size: 2rem;
@@ -331,6 +343,7 @@ nav {
   padding-left: 7%;
   padding-top: 50px;
   padding-bottom: 30px;
+  color: #322035;
 }
 @media (max-width: 700px) {
   .about-us h1,
@@ -534,6 +547,7 @@ main {
 .question h4 {
   text-transform: none;
   line-height: 1.5;
+  color: #322035;
 }
 .question p {
   color: var(--clr-grey-3);
@@ -818,7 +832,7 @@ main {
   margin-right: auto;
 }
 .container {
-  width: 45vw;
+  width: 40vw;
   margin: auto;
 }
 .review {
@@ -869,6 +883,7 @@ main {
 .author {
   padding-top: 1.8rem;
   width: 100px;
+  color: #322035;
 }
 .card-avatar {
   width: 100px;
@@ -880,6 +895,7 @@ main {
   margin-bottom: 0.75rem;
   text-align: left;
   line-height: 35px;
+  color: #322035;
 }
 .prev-btn,
 .next-btn {

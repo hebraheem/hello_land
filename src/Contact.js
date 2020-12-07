@@ -7,8 +7,6 @@ import { AiFillLinkedin } from "react-icons/ai";
 import { AiFillFacebook } from "react-icons/ai";
 import { AiFillInstagram } from "react-icons/ai";
 import { AiFillTwitterCircle } from "react-icons/ai";
-import Ellipse24 from "./images/Ellipse24.png";
-import Ellipse25 from "./images/Ellipse25.png";
 
 const Contact = ()=>{
     return (
@@ -57,18 +55,7 @@ const Contact = ()=>{
           <div className="contact-img">
             <div className="img-box">
               <img src={ContactUs} alt="contact us" />
-              <img
-                src={Ellipse24}
-                alt=""
-                className="elipse4"
-                style={{ width: "15%", height: "18%" }}
-              />
-              <img
-                src={Ellipse25}
-                alt=""
-                className="elipse5"
-                style={{ width: "10%", height: "13%" }}
-              />
+
             </div>
           </div>
         </div>

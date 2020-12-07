@@ -41,14 +41,9 @@ const Home = ()=>{
           <div className="banner-img">
             <img src={hero_2} className="hero_1 hero_2" alt="hero-1" />
           </div>
-          <div
-            className="banner-text"
-            style={{
-              background: `url(${Aestheticdesign2})no-repeat`,
-              marginTop: "20px",
-            }}
-          >
-            <h3 className="turn">Go Live to teach your Students with ease</h3>
+          <div className="banner-text">
+            <img src={Aestheticdesign2} alt="" className="aesthetic2" />
+            <h3 className="turn" >Go Live to teach your Students with ease</h3>
             <p className="turn-paragraph">
               Our Platform gives you the ability to live stream lectures to your
               students, also the videos would be made avialiable on the platform
@@ -86,8 +81,15 @@ const Home = ()=>{
         <section className="container">
           <div className="title">
             <h2 className="client-say">What Our Client Say</h2>
-            <img src={Underline} alt="" className="img-underline" style={{width: "50%"}}/>
-            <p className="our-word">Our word we keep and our word speak for us.</p>
+            <img
+              src={Underline}
+              alt=""
+              className="img-underline"
+              style={{ width: "50%" }}
+            />
+            <p className="our-word">
+              Our word we keep and our word speak for us.
+            </p>
           </div>
           <Review />
         </section>
@@ -98,14 +100,8 @@ const Home = ()=>{
           <div className="banner-img">
             <img src={hero4} className="hero_1 hero_2" alt="hero-1" />
           </div>
-          <div
-            className="banner-text"
-            style={{
-              background: `url(${Aestheticdesign2})no-repeat`,
-              marginTop: "20px",
-            }}
-          >
-            <h3 className="turn">Let’s Build Something Great Together</h3>
+          <div className="banner-text">
+            <h3 className="turn stylish-height">Let’s Build Something Great Together</h3>
             <p className="turn-paragraph">
               The Success of your students is your Success, and your Success is
               our Success. Join Reatent and lets win together
