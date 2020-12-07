@@ -21,7 +21,7 @@ const Navbar = () => {
   },[isToggle])
   return (
     <nav>
-      <div className="nav-center">
+      <div className="nav-center-nav">
         <div className="nav-header">
           <NavLink exact to="/">
             <img className="logo-img" src={RLogo} alt="name" />

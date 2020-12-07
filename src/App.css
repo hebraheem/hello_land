@@ -50,7 +50,6 @@ Global Styles
 ===============
 */
 
-
 *,
 ::after,
 ::before {
@@ -115,8 +114,9 @@ nav {
 .logo-img {
   width: 136px;
   height: 40px;
+  margin-left: 28%;
 }
-.nav-link{
+.nav-link {
   color: #cfc5ef;
 }
 .links a {
@@ -170,6 +170,14 @@ nav {
     justify-content: space-between;
     padding: 1rem;
   }
+  .nav-center-nav {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
   .nav-header {
     padding: 0;
   }
@@ -184,7 +192,7 @@ nav {
   .links {
     display: flex;
   }
- 
+
   .links a {
     padding: 0;
     margin: 0.3rem 1.5rem;
@@ -201,7 +209,7 @@ nav {
   display: grid;
   grid-template-columns: (5fr, 7fr);
   height: auto;
-  padding-bottom: 150px;
+  padding-bottom: 12%;
 }
 
 @media (min-width: 800px) {
@@ -212,7 +220,7 @@ nav {
 
 .turn {
   width: 100%;
-  padding-top: 160px;
+  padding-top: 25%;
   padding-left: 10%;
   font-size: 300%;
   font-style: normal;
@@ -243,23 +251,24 @@ nav {
   font-size: 2.5rem;
   color: #322035;
 }
-.our-word{
+.our-word {
   padding-top: 35px;
-  padding-bottom: 60px;
+  padding-bottom: 5%;
   font-size: 20px;
   color: #322035;
 }
-@media(max-width: 800px){
-  .client-say, .turn {
-  font-size: 1.8rem;
-}
-.our-word{
-  font-size: 14px;
-}
-.turn-paragraph {
-  font-size: 14px;
-  font-weight: 400;
-}
+@media (max-width: 599px) {
+  .client-say,
+  .turn {
+    font-size: 1.8rem;
+  }
+  .our-word {
+    font-size: 14px;
+  }
+  .turn-paragraph {
+    font-size: 14px;
+    font-weight: 400;
+  }
 }
 
 .hero4 {
@@ -322,6 +331,28 @@ nav {
   padding-left: 7%;
   padding-top: 50px;
   padding-bottom: 30px;
+}
+@media (max-width: 700px) {
+  .about-us h1,
+  .unique h1,
+  .why-plat h1,
+  .careers h1,
+  .team h1 {
+    font-size: 35px;
+    line-height: 50px;
+    text-align: left;
+    padding-top: 30px;
+    padding-bottom: 15px;
+  }
+  .about-text,
+  .unique-text,
+  .why-plat-text,
+  .careers-text {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+  }
 }
 
 .about-text,
@@ -423,6 +454,22 @@ nav {
   line-height: 24px;
   font-weight: 400;
 }
+@media (max-width: 599px) {
+  .quick-links {
+    margin-top: 20px;
+    margin-left: 80px;
+  }
+  .content {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  .contact-add {
+    margin-top: 20px;
+  }
+  .social img {
+    margin-top: 20px;
+  }
+}
 
 /*============== FAQ PAGE ==============*/
 .faq-banner img {
@@ -436,6 +483,13 @@ nav {
   line-height: 82px;
   color: #322035;
   padding: 50px 7%;
+}
+@media (max-width: 700px) {
+  .faq-banner h1 {
+    font-size: 35px;
+    padding: 30px 7%;
+    line-height: 45px;
+  }
 }
 
 /*
@@ -568,6 +622,19 @@ main {
   padding-bottom: 30px;
 }
 
+@media (max-width: 700px) {
+  .contact-text h1 {
+    font-size: 35px;
+    padding-bottom: 10px;
+  }
+  .bold,
+  .light {
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 10px;
+  }
+}
+
 .bold,
 .light {
   font-style: normal;
@@ -601,11 +668,11 @@ main {
   margin-bottom: 50px;
 }
 
-.elipse4{
+.elipse4 {
   position: absolute;
   right: 32%;
 }
-.elipse5{
+.elipse5 {
   position: absolute;
   right: 36.2%;
 }
@@ -646,7 +713,6 @@ main {
   color: #322035;
   padding-top: 30px;
 }
-
 
 /*
 =============== 
@@ -695,10 +761,20 @@ Modal
   outline: none;
 }
 
-.modal-container h1{
+.modal-container h1 {
   padding: 50px 0 30px 0;
   font-size: 2.5rem;
   color: #322035;
+}
+@media (max-width: 700px) {
+  .modal-container h1 {
+    font-size: 1.5rem;
+    padding: 30px 0 10px 0;
+  }
+  .modal-container p {
+    font-size: 12px;
+    padding: 5px 0;
+  }
 }
 .modal-container p {
   font-size: 20px;
@@ -707,17 +783,17 @@ Modal
   font-weight: 500;
 }
 
-.elipse23{
+.elipse23 {
   position: absolute;
   bottom: 0;
   left: 0;
 }
-.elipse24{
+.elipse24 {
   position: absolute;
   bottom: 10.4%;
   left: 0;
 }
-.elipse25{
+.elipse25 {
   position: absolute;
   bottom: 10px;
   left: 19%;
@@ -766,7 +842,6 @@ main {
 }
 .card-person {
   display: flex;
-
 }
 .quote-icon {
   position: relative;
@@ -782,7 +857,7 @@ main {
   color: #322035;
 }
 .img-container::before {
-  content: '';
+  content: "";
   width: 100%;
   height: 100%;
   background: var(--clr-primary-5);
@@ -818,8 +893,8 @@ main {
   outline: none;
 }
 
-@media(max-width: 800px){
-  .container{
+@media (max-width: 800px) {
+  .container {
     width: 80%;
   }
 }
