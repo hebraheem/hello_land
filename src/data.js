@@ -95,3 +95,29 @@ const questions = [
   },
 ];
 export default questions;
+
+export const reviews = [
+  {
+    id: 1,
+    name: "Onifade Joseph",
+    job: "web developer",
+    text:
+      "Reatent has helped my school alot we get better results with our students now. Its really turning the hands of time. i would definately advice everyone to get registered and enjoy too.",
+  },
+  {
+    id: 2,
+    name: "Adams Olumide",
+    job: "web designer",
+    text:
+      "Reatent has helped my school alot we get better results with our students now. Its really turning the hands of time. i would definately advice everyone to get registered and enjoy too.",
+  },
+  {
+    id: 3,
+    name: "Mathew Simon",
+    job: "intern",
+    text:
+      "Reatent has helped my school alot we get better results with our students now. Its really turning the hands of time. i would definately advice everyone to get registered and enjoy too.",
+  },
+];
+
+

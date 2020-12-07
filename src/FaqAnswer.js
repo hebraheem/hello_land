@@ -5,7 +5,7 @@ function FaqAnswer() {
   const [questions] = useState(data);
   return (
     <main>
-      <section className="container">
+      <section className="contain-question">
         <section className="info">
           {questions.map((question) => {
             return <Question key={question.id} {...question} />;

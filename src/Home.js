@@ -9,6 +9,8 @@ import hero_2 from "./images/hero_2.png";
 import hero_3 from "./images/hero_3.png";
 import hero4 from "./images/hero4.png";
 import Footer from './Footer'
+import Review from './Review';
+import Underline from "./images/Underline.png";
 
 const Home = ()=>{
     return (
@@ -81,6 +83,14 @@ const Home = ()=>{
           </div>
         </div>
         {/* ================================== */}
+        <section className="container">
+          <div className="title">
+            <h2 className="client-say">What Our Client Say</h2>
+            <img src={Underline} alt="" className="img-underline" style={{width: "50%"}}/>
+            <p className="our-word">Our word we keep and our word speak for us.</p>
+          </div>
+          <Review />
+        </section>
         <div
           className="hero4 grid"
           style={{ background: `url(${StylishFeel})` }}
