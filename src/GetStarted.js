@@ -138,9 +138,6 @@ const GetStarted = ()=>{
                 Get Started
               </button>
             </form>
-            {/* <button className="get-started-button" onClick={() => OpenModal()}>
-              Get Started
-            </button> */}
           </div>
           <div className="get-started-img-box">
             <img src={GetStartedImage} alt="" className="get-started-img" />

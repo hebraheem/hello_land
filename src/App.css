@@ -223,6 +223,7 @@ nav {
     width: 60%;
     padding-left: 5%;
     padding-right: 5%; 
+    padding-top: 5%; 
   }
   .banner-text-left h3 {
     padding-top: 25%;
@@ -280,12 +281,13 @@ nav {
   width: 95%;
 }
 .hero_1 {
-  width: 90%;
+  width: 100%;
+  padding-right: 10%;
   margin-top: 80px;
   object-fit: contain;
 }
 .hero_2{
-  width: 90%;
+  width: 100%;
   margin-top: 80px;
   object-fit: contain;
 }
@@ -293,10 +295,11 @@ nav {
   background: #eae1ec;
 }
 .hero4 {
-  padding-top: 20%;
+  padding-top: 13%;
 }
 .title {
   text-align: center;
+  margin-top: 5rem;
   margin-bottom: 4rem;
 }
 .client-say {
@@ -317,6 +320,9 @@ nav {
   .our-word {
     font-size: 14px;
   }
+  .aesthetic{
+    width: 350px
+  }
 }
 
 .banner-btn {
@@ -331,6 +337,8 @@ nav {
   cursor: pointer;
   outline: none;
   font-size: 16px;
+  z-index: 2;
+  color: #322305;
 }
 .aesthetic2{
   position: absolute;
@@ -339,16 +347,11 @@ nav {
 .aesthetic {
   position: absolute;
   left: 0;
+  z-index: -1;
 }
 @media(max-width: 800px){
   .aesthetic2{
     top: 200%;
-  }
-}
-@media (max-width: 800px) {
-  .turn {
-    font-size: 2rem;
-    line-height: 55px;
   }
 }
 
@@ -438,7 +441,7 @@ nav {
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 .social {
-  padding-left: 25%;
+  padding-left: 18%;
 }
 .social img {
   width: 218px;
@@ -450,6 +453,7 @@ nav {
   font-style: normal;
   font-weight: 600;
   line-height: 22px;
+  padding-left: 5px;
   letter-spacing: 0em;
   text-align: left;
   color: #fff;
@@ -464,7 +468,7 @@ nav {
 .quick-links {
   margin-top: 87px;
   width: 150px;
-  margin-left: 160px;
+  margin-left: 20%;
 }
 .quick-links h2 {
   color: #fff;
@@ -477,8 +481,8 @@ nav {
 .contact-add {
   color: #fff;
   margin-top: 87px;
-  width: 260px;
-  margin-left: 15%;
+  width: 50%;
+  margin-left: 20%;
 }
 .contact-add h2 {
   padding-bottom: 40px;
@@ -899,6 +903,7 @@ main {
 .container {
   width: 40vw;
   margin: auto;
+  margin-bottom: 70px;
 }
 .review {
   background: var(--clr-white);
