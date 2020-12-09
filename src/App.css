@@ -59,6 +59,7 @@ Global Styles
 }
 body {
   line-height: 1.5;
+  font-family: reatent;
 }
 ul {
   list-style-type: none;
@@ -93,7 +94,8 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 1rem 0;
+  margin-left: 3%;
 }
 .nav-toggle {
   font-size: 1.5rem;
@@ -114,7 +116,7 @@ nav {
 .logo-img {
   width: 136px;
   height: 40px;
-  margin-left: 35px;
+  /* margin-left: 35px; */
 }
 .nav-link {
   color: #cfc5ef;
@@ -144,7 +146,8 @@ nav {
   border: none;
   cursor: pointer;
   outline: none;
-  font-size: 16px;
+  font-size: 1rem;
+  font-weight: 600;
 }
 .get-started:hover {
   border: solid 1px #fff;
@@ -204,24 +207,60 @@ nav {
 }
 
 /*================ HOME PAGE CSS ================*/
-/* banner */
-.grid {
-  display: grid;
-  grid-template-columns: (5fr, 7fr);
-  height: auto;
-  padding-bottom: 4%;
+.banner {
+  display: block;
 }
 
 @media (min-width: 800px) {
-  .grid {
-    grid-template-columns: repeat(2, 1fr);
+  .banner {
+    display: flex;
+  }
+  .banner-img {
+  width: 40%;
+  padding-bottom: 5%;
+  }
+  .banner-text{
+    width: 60%;
+    padding-left: 5%;
+    padding-right: 5%; 
+  }
+  .banner-text-left h3 {
+    padding-top: 25%;
+    font-size: 320%;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 80px;
+    letter-spacing: 0em;
+    text-align: left;
+    justify-self: center;
+    color: #322305;
+  }
+  .banner-text-left p{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: left;
+    color: #322305;
+    width: 95%;
+  }
+  .img-left{
+    padding-left: 3%;
   }
 }
 
-.turn {
+.banner-img {
+  width: 80%;
+  margin: auto;
+}
+
+.banner-text{
   width: 100%;
+  padding-left: 5%;
+  padding-right: 5%; 
+}
+.banner-text h3 {
   padding-top: 25%;
-  padding-left: 10%;
   font-size: 280%;
   font-style: normal;
   font-weight: 600;
@@ -231,20 +270,30 @@ nav {
   justify-self: center;
   color: #322305;
 }
-.hero4{
-  padding-top: 200px;
+.banner-text p{
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: left;
+  color: #322305;
+  width: 95%;
 }
 .hero_1 {
   width: 90%;
-  height: 520px;
-  padding-left: 10%;
   margin-top: 80px;
+  object-fit: contain;
 }
-.hero_1 img {
-  margin: auto;
+.hero_2{
+  width: 90%;
+  margin-top: 80px;
+  object-fit: contain;
 }
 .hero-2 {
   background: #eae1ec;
+}
+.hero4 {
+  padding-top: 20%;
 }
 .title {
   text-align: center;
@@ -268,30 +317,13 @@ nav {
   .our-word {
     font-size: 14px;
   }
-  .turn-paragraph {
-    font-size: 14px;
-    font-weight: 400;
-  }
 }
 
-.hero4 {
-  padding-left: 5%;
-}
-.turn-paragraph {
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 30px;
-  text-align: left;
-  color: #322305;
-  width: 80%;
-  padding-left: 10%;
-}
 .banner-btn {
   width: 120px;
   height: 42px;
-  margin-left: 10%;
   margin-top: 10px;
+  margin-bottom: 20px;
   background: #ffffff;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
@@ -300,14 +332,13 @@ nav {
   outline: none;
   font-size: 16px;
 }
-.banner-text {
-  width: 100%;
-  padding-right: 0%;
-}
 .aesthetic2{
   position: absolute;
   right: 0;
-  /* top: 140%; */
+}
+.aesthetic {
+  position: absolute;
+  left: 0;
 }
 @media(max-width: 800px){
   .aesthetic2{
@@ -447,7 +478,7 @@ nav {
   color: #fff;
   margin-top: 87px;
   width: 260px;
-  margin-left: 80px;
+  margin-left: 15%;
 }
 .contact-add h2 {
   padding-bottom: 40px;
@@ -500,7 +531,7 @@ nav {
 @media (max-width: 700px) {
   .faq-banner h1 {
     font-size: 35px;
-    padding: 30px 7%;
+    padding: 30px 3%;
     line-height: 45px;
   }
 }
@@ -610,49 +641,30 @@ main {
 
 /*========== CONTACT US PAGE STYLING ==========*/
 .contact-us {
-  display: grid;
-  height: auto;
-}
-@media (min-width: 800px) {
-  .contact-us {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-.img-box img {
-  width: 90%;
-  height: 500px;
-}
-.contact-text {
-  padding-left: 11%;
+  display: block;
 }
 .contact-text h1 {
-  font-size: 55px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 83px;
-  letter-spacing: 0em;
-  text-align: left;
-  color: #322035;
-  padding-bottom: 30px;
+font-size: 35px;
+font-style: normal;
+font-weight: 600;
+line-height: 83px;
+text-align: left;
+color: #322035;
+padding-bottom: 30px;
+}
+.contact-us-img{
+  width: 100%;
+  padding: 5% 10%;
+  margin: auto;
 }
 
-@media (max-width: 700px) {
-  .contact-text h1 {
-    font-size: 35px;
-    padding-bottom: 10px;
-  }
-  .bold,
-  .light {
-    font-size: 16px;
-    line-height: 24px;
-    padding-bottom: 10px;
-  }
+.contact-text {
+  padding: 0 5%;
 }
-
 .bold,
 .light {
   font-style: normal;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 24px;
   display: flex;
   align-items: center;
@@ -660,10 +672,33 @@ main {
   padding-bottom: 30px;
 }
 .bold {
-  font-weight: bold;
+  font-weight: bolder;
 }
 .light {
   font-weight: 400;
+}
+@media (min-width: 800px) {
+  .contact-us {
+    display: flex;
+  }
+  .contact-img{
+    width: 50%;
+  }
+  .contact-us-img {
+  width: 100%;
+  object-fit: contain;
+  padding: 10% 10%;
+  }
+  .contact-text {
+  padding-left: 4%;
+  width: 50%;
+  }
+  .contact-text h1 {
+  font-size: 55px;
+  }
+  .bold, .light {
+  font-size: 20px;
+  }
 }
 
 .c-media {
@@ -674,36 +709,28 @@ main {
 .contact-text a {
   color: #322035;
 }
-.img-box {
-  width: 80%;
-  height: 500px;
-  margin: auto;
-  margin-top: 150px;
-  margin-bottom: 50px;
-}
-
-.elipse4 {
-  position: absolute;
-  right: 32%;
-}
-.elipse5 {
-  position: absolute;
-  right: 36.2%;
-}
 
 /*============== GETSTARTED STYLING ==============*/
 
 .get-started-section {
-  display: grid;
-  padding-left: 5%;
+  display: block;
 }
-@media (min-width: 800px) {
-  .get-started-section {
-    grid-template-columns: repeat(2, 1fr);
-  }
+.get-started-img-box{
+  width: 100%;
+  text-align: center;
+}
+.get-started-img {
+  width: 80%;
+  margin: auto;
+  object-fit: contain;
+  padding-bottom: 30px;
+}
+.getstarted-form{
+  margin-left: 5%;
+  width: 90%;
 }
 .getstarted-form h1 {
-  font-size: 55px;
+  font-size: 35px;
   font-style: normal;
   font-weight: 600;
   line-height: 83px;
@@ -711,7 +738,7 @@ main {
   color: #322035;
 }
 .getstarted-form p {
-  font-size: 20px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 600;
   line-height: 38px;
@@ -719,7 +746,7 @@ main {
   color: #322035;
 }
 .getstarted-form h3 {
-  font-size: 25px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 600;
   line-height: 38px;
@@ -727,6 +754,43 @@ main {
   color: #322035;
   padding-top: 30px;
 }
+.get-started-input input{
+  border: none;
+  border-bottom: #322035 solid 0.8px;
+  width: 30%; 
+  margin-right: 15%;
+  height: 45px;
+  color: rgba(50, 32, 53, 0.4);
+  outline: none;
+}
+.get-started-button{
+  width: 25%;
+  height: 52px;
+  background: #322035;
+  border-radius: 10px;
+  margin-top: 50px;
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 5%;
+}
+@media (min-width: 800px) {
+  .get-started-section {
+    display: flex;
+  }
+  .getstarted-form h1{
+    font-size: 55px;
+  }
+  .getstarted-form p{
+    font-size: 20px;
+  }
+  .getstarted-form h3{
+    font-size: 25px;
+  }
+}
+
 
 /*
 =============== 

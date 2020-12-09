@@ -16,15 +16,11 @@ const Home = ()=>{
     return (
       <section>
         <Navbar />
-        <div className="banner grid">
-          <div
-            style={{
-              background: `url(${AestheticDesign})no-repeat`,
-              marginTop: "20px",
-            }}
-          >
-            <h3 className="turn">You can turn back the hands of time!</h3>
-            <p className="turn-paragraph">
+        <div className="banner">
+          <img src={AestheticDesign} alt="" className="aesthetic" />
+          <div className="banner-text">
+            <h3>You can turn back the hands of time!</h3>
+            <p>
               Have all your classes recorded and brought back to your Students
               on request
             </p>
@@ -37,14 +33,14 @@ const Home = ()=>{
           </div>
         </div>
         {/* /////////////////////////////// */}
-        <div className="hero-2 grid">
-          <div className="banner-img">
-            <img src={hero_2} className="hero_1 hero_2" alt="hero-1" />
+        <div className="banner hero-2">
+          <div className="banner-img img-left">
+            <img src={hero_2} className="hero_2" alt="hero-1" />
           </div>
           <div className="banner-text">
             <img src={Aestheticdesign2} alt="" className="aesthetic2" />
-            <h3 className="turn" >Go Live to teach your Students with ease</h3>
-            <p className="turn-paragraph">
+            <h3>Go Live to teach your Students with ease</h3>
+            <p>
               Our Platform gives you the ability to live stream lectures to your
               students, also the videos would be made avialiable on the platform
               for reference later
@@ -55,17 +51,16 @@ const Home = ()=>{
           </div>
         </div>
         {/* ================== */}
-        <div className="banner grid">
+        <div className="banner">
           <div
+            className="banner-text"
             style={{
               background: `url(${AestheticDesign})no-repeat`,
               marginTop: "20px",
             }}
           >
-            <h3 className="turn">
-              Improve the grades of your students with technology
-            </h3>
-            <p className="turn-paragraph">
+            <h3>Improve the grades of your students with technology</h3>
+            <p>
               Reatent has proven through our research to help students perform
               better, in their assesments.
             </p>
@@ -94,17 +89,18 @@ const Home = ()=>{
           <Review />
         </section>
         <div
-          className="hero4 grid"
+          className="hero4 banner"
           style={{ background: `url(${StylishFeel})` }}
         >
-          <div className="banner-img">
-            <img src={hero4} className="hero_1 hero_2" alt="hero-1" />
+          <div className="banner-img img-left">
+            <img src={hero4} className="hero_2" alt="hero-1" />
           </div>
           <div className="banner-text">
-            <h3 className="turn stylish-height">Let’s Build Something Great Together</h3>
-            <p className="turn-paragraph">
+            <h3>Let’s Build Something Great Together</h3>
+            <p>
               The Success of your students is your Success, and your Success is
-              our Success. Join Reatent and lets win together
+              our Success.
+              <br /> Join Reatent and lets win together
             </p>
             <NavLink to="/getstarted">
               <button className="banner-btn">Get started</button>

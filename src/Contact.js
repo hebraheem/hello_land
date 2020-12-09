@@ -53,10 +53,10 @@ const Contact = ()=>{
             </NavLink>
           </div>
           <div className="contact-img">
-            <div className="img-box">
-              <img src={ContactUs} alt="contact us" />
+            {/* <div className="img-box"> */}
+              <img src={ContactUs} className="contact-us-img" alt="contact us" />
 
-            </div>
+            {/* </div> */}
           </div>
         </div>
         <Footer />
